@@ -11,3 +11,5 @@ js/ - contains the javascript that hooks in to the backend API
 [Back-end repository](https://github.com/mattisz/resume-backend)
 
 [See my resume](https://resume.mattisz.com)
+
+[See the full write up](https://resume.mattisz.com/about.html)
