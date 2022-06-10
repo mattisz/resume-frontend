@@ -1,0 +1,226 @@
+* {
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+
+body{
+    margin: 0;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 100vh;
+}
+  
+.container {
+    display: flex;
+    margin: 0 3vh 0 3vh;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+h2, h3, h4, ul, ol, p{
+    margin:0;
+}
+#sidebar{
+    flex: 0 0 calc(280px + 1.5vh);
+    margin-right: 1.5vh;
+    height: 100vh;
+    top: 0;
+    flex-shrink: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+#sidebar_scroll{
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    padding-right: 1vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y:scroll;
+    overflow-x:hidden;
+    flex-shrink: 0;
+}
+#sidebar hr{
+    width: 100%;
+}
+#photo {
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    width: 200px;
+    height: 192px;
+}
+.contact h4{
+    display: flex;
+    flex-direction: column;
+}
+.contact h2,
+.contact h4,
+.contact p {
+	text-align: center;
+}
+#contactbuttons{
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+}
+#prompt {
+    text-align: center;
+}
+#challenge{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    width: 100px;
+    height: 100px;
+    object-fit: none;
+}
+form {
+    text-align: center;
+}
+#try_again{
+    color: red;
+}
+#skills ul{
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+#skills li{
+    border-radius: 5px;
+    background: lightgray;
+    padding: 3px;
+}
+.category{
+    box-shadow: 0px 0px 10px 0px;
+    padding: 20px 20px 20px 20px;
+    background-color: white;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+.main_wrapper{
+    margin: 0;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: calc(100vw - 9vh - 280px);
+    height: 100vh;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y:scroll;
+}
+#certifications{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#return ul{
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+#return li{
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 3px;
+}
+#return a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+#return a:hover {
+    color: slategray;
+}
+.organization{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+.organization h4{
+    margin:0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.organization p{
+    display: inline;
+}
+.organization span{
+    font-weight: normal;
+}
+.orgtitle h4{
+    font-weight: normal;
+    font-style: italic;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.views{
+    text-align: center;
+    margin-bottom: 3%;
+}
+.views #user_count,
+.views #total_count{
+    font-weight: bold;
+}
+.contact_button {
+    border: none;
+    outline: none;
+    background: none;
+    padding: 0;
+}
+.contact_button:hover{
+    border-radius: 5px;
+    background-color: lightgray;
+}
+@media screen and (max-width: 1000px) {
+    .container {
+        flex-direction: column;
+        flex-wrap:nowrap;
+        overflow-x: hidden;
+        overflow-y:visible;
+        height: fit-content;
+    }
+    .orgtitle h4{
+        flex-direction: column;
+    }
+    .organization h4{
+        flex-direction: column;
+    }
+    .contact{
+        width: 100%;
+    }
+    .contact h4{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    #sidebar{
+        flex: 100%;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        width: 100%;
+        height: auto;
+    }
+    .main_wrapper{
+        display: flex;
+        margin: 0;
+        flex: 1 0 100%;
+        overflow-x: hidden;
+        overflow-y:hidden;
+        height: auto;
+    }
+    #sidebar_scroll{
+        padding-right: 0;
+        margin-bottom: 0;
+    }
+}

@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Matthew Tiszenkel's Resume - About</title>
+        <meta charset="utf-8"/>
+        <link rel = "stylesheet" type = "text/css" href = "css/resume.css" />
+        <script defer src="js/api.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div id="sidebar">
+                <div id="sidebar_scroll">
+                    <div id="photo">
+                        <img id="headshot" src="images/headshot.jpeg">
+                    </div>
+                    <div class="contact">
+                        <br>
+                        <h2>Matthew Tiszenkel</h2>
+                        <h4>Salt Lake City, UT</h4>
+                        <p id="phone"></p>
+                        <p id="email"></p>
+                        <br>
+                        <h4 id="contactbuttons">
+                            <button class="contact_button" id="phone_button" onclick="genForm()"><img id="phone" src="images/phone.png"></button>
+                            <button class="contact_button" id="email_button" onclick="genForm()"><img src="images/mail.png"></button>
+                            <a class="contact_button" href="https://www.linkedin.com/in/mattisz" target="_blank" rel="noopener noreferrer"><img id="linkedin" src="images/linkedin.png"></a>
+                            <a class="contact_button" href="https://github.com/mattisz" target="_blank" rel="noopener noreferrer"><img id="github" src="images/github.png"></a>
+                        </h4>
+                        <div id="form_start"></div>
+                        <hr>
+                    </div>
+                    <h4>SKILLS</h4>
+                    <div id="skills">
+                        <ul>
+                            <li>Windows Server</li>
+                            <li>ADUC</li>
+                            <li>GPO</li>
+                            <li>Debian</li>
+                            <li>NGINX</li>
+                            <li>Proxmox</li>
+                            <li>Docker</li>
+                            <li>pfSense</li>
+                            <li>Unifi</li>
+                            <li>Palo Alto</li>
+                            <li>AWS</li>
+                            <li>CloudFormation</li>
+                            <li>Bash</li>
+                            <li>PowerShell</li>
+                            <li>Python</li>
+                            <li>PHP</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>MySQL</li>
+                            <li>Git</li>
+                            <li>GitHub</li>
+                            <li>GitHub Actions</li>
+                        </ul>
+                        <hr>
+                    </div>
+                    <br>
+                    <h4>CERTIFICATIONS</h4>
+                    <div id="certifications">
+                        <a href="https://www.credly.com/badges/d8905ef3-1b76-42ff-bee7-9236891302ee" target="_blank" rel="noopener noreferrer"><img id="saa" src="images/saa.png"></a>
+                    </div>
+                    <hr>
+                    <div id="return">
+                        <ul>
+                            <li><a href="/">⇦ Return to Resume</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="main_wrapper">
+                <div class="category">
+                    <h3>Forward</h3>
+                    <br>
+                    <p>
+                        If you are reading this about page, you found my resume website. My name is Matthew Tiszenkel and this post aims to describe a bit about me, my resume, and the things I learned along the way.
+                    </p>
+                    <br>
+                    <p>
+                        After completing my MSIS at the University of Utah, I knew that I wanted to move away from my career as a Windows Systems Administor, toward a career in the cloud. Admittedly, I really enjoyed my previous job and I learned a ton during my time there. However, we were a fully Windows shop, with almost exclusively on-premise infrastructure, and the cloud seemed like it would solve many of the challenges I encountered by keeping everything locally hosted.
+                    </p>
+                    <br>
+                    <p>
+                        AWS seemed like a good place to start. After a brief sabbatical, I began my cloud journey by preparing for and completing the AWS Solutions Architect Associate Exam – SAA-C02. After a bit of research, I discovered <a href="https://learn.cantrill.io/p/aws-certified-solutions-architect-associate-saa-c02" target="_blank" rel="noopener noreferrer">Adrian Cantrill’s SAA-C02 course</a>, which I truly cannot say enough good things about. Adrian starts with the basics and teaches more than one needs to know to pass the exam. I finished by study with <a href="https://portal.tutorialsdojo.com/courses/aws-certified-solutions-architect-associate-practice-exams/" target="_blank" rel="noopener noreferrer">Jon Bonso’s highly regarded practice exams</a> and completed my certification on April 12, 2022.
+                    </p>
+                    <br>
+                    <p>
+                        Upon completing exam, I felt that I needed to apply the knowledge I learned to help solidify and expand it. I came across the <a href="https://cloudresumechallenge.dev/docs/the-challenge/" target="_blank" rel="noopener noreferrer">Cloud Resume Challenge</a> and the concept really resonated with me. I thought to myself, “what if my resume was my resume”? Or more clearly, what if my resume could showcase many of the skills I learned throughout my career, formal education, and self-study?
+                    </p>
+                    <br>
+                    <p>
+                        In my opinion, my resume does just that. Regarding hard skills, it showcases my knowledge of AWS, Python, CSS, HTML, JavaScript, Docker and GitHub. Perhaps more importantly, it highlights my ability to problem solve and work around the limitations of a given circumstance to achieve my objective. As you will see below, there were several points where I created custom solutions to work around limitations, self-imposed or environmental, to end up with the resume you discovered.
+                    </p>
+                    <br>
+                    <h3>Goals</h3>
+                    <br>
+                    <ul>
+                        <li>Create and deploy and fully serverless resume site on AWS.</li>
+                        <li>Build a clean and functional S3 hosted static front-end to post my resume and this about page.</li>
+                        <li>Implement CloudFront with HTTPS to serve content from edge locations around the U.S.</li>
+                        <li>Utilize Route53 for DNS.</li>
+                        <li>Create a visitor counter serverless application with DynamoDB, Lambda, and API Gateway.</li>
+                        <li>Create a serverless application that allowed me to provide contact information that would not be easily scraped by bots. This one took almost a full day but I had fun and learned a lot.</li>
+                        <li>Deploy all required AWS resources in a single CloudFormation template.</li>
+                        <li>Source control through Git.</li>
+                        <li>Publish my source code on GitHub for the anyone who wishes to see it.</li>
+                        <li>Leverage GitHub Actions to implement CI/CD for both front-end and back-end code.</li>
+                    </ul>
+                    <br>
+                    <h3>Limitations</h3>
+                    <br>
+                    <ul>
+                        <li>Code front-end using HTML, CSS, and JavaScript. My front-end development skills are fairly basic. While there are many frameworks out there to build a more robust or beautiful front-end, learning them was to remain outside the scope of this project.</li>
+                        <li>All AWS infrastructure deployed in a single CloudFormation stack. This was a self-imposed limitation. Having never used CloudFormation outside of a guided lab, I wanted to really learn how to work with it and around its limitations. SAM and Serverless Framework are incredible tools but I wanted to do everything manually before trying these options.</li>
+                        <li>100 hours or less. I could spend months perfecting everything but I wanted to limit this project to roughly 2 weeks of work.</li>
+                    </ul>
+                    <br>
+                    <h3>Process</h3>
+                    <br>
+                    <ol>
+                        <li>Build the front-end first and test it locally before moving on to AWS.</li>
+                        <li>Build and test all back-end infrastructure and functions through the AWS console. In hindsight, this was not the most efficient use of my time. However, I learned a lot by clicking around the GUI and researching any options I was unsure of.</li>
+                        <li>Convert all AWS infrastructure to a single CloudFormation template. This proved to be the timeliest task. When building in the console, it is easy to ignore how simple it is to do things like switch regions or attach a Lambda Layer. When limiting one’s self to a single CloudFormation stack, these simple changes become far less trivial.</li>
+                        <li>Create GitHub Actions workflows for both the front-end and back-end repositories to automate the deployment changes to AWS.</li>
+                        <li>Write and post this about page to publish what I learned.</li>
+                    </ol>
+                    <br>
+                    <h3>Front-End</h3>
+                    <br>
+                    <p>
+                        The front-end for my resume is fairly simple. It is comprised of HTML, CSS, a few images, and a bit of JavaScript. The JavaScript code exclusively acts as a way to communicate with my API and dynamically write the required information to the page.
+                    </p>
+                    <br>
+                    <p>
+                        My goal here was clean and functional. On a larger screen, my resume presents an information bar to the left and the resume content on the right. When viewed from a smaller screen, the information bar moves to the top of the page.
+                    </p>
+                    <br>
+                    <p>
+                        The information bar contains a photo of me, my name, location, a short list of skills, and four buttons for emailing me, calling me, my LinkedIn, and my GitHub. I knew I wanted to include contact information as this is a resume. However, my initial thought was about how I would avoid spam caused by bots scraping my contact information. I considered using Google’s reCAPTCHA as it would be free for my use. Then I realized I could build my own serverless challenge and response application in AWS Lambda. I will describe this in greater detail later.
+                    </p>
+                    <br>
+                    <p>
+                        When an individual clicks the email or phone buttons on my resume, they are presented with a simple math problem. If they answer the problem correctly, my email and phone number appear under my location in the information bar. Additionally, the next time that user clicks on the phone or email buttons, they open the user’s phone or email client directly.
+                    </p>
+                    <br>
+                    <p>
+                        The only other dynamic element on the front-end of my resume is the visitor counter at the bottom of the page. This displays the total number of unique visitors to my resume, and the number of times a given visitor has viewed my resume. This visitor counter was inspired by the Cloud Resume Challenge and will be discussed at length later in this document.
+                    </p>
+                    <br>
+                    <h3>AWS Back-End: Overview</h3>
+                    <br>
+                    <p>
+                        The AWS back-end for my resume is almost entirely composed in a single CloudFormation template. This template includes:
+                    </p>
+                    <br>
+                    <ul>
+                        <li>IAM policies and roles required for everything to function properly.</li>
+                        <li>S3 buckets for front-end and back-end resources.</li>
+                        <li>SSM parameters for my contact information.</li>
+                        <li>Route53 hosted zone and records required.</li>
+                        <li>ACM certificates for the CloudFront distribution and API Gateway API.</li>
+                        <li>DynamoDB tables for my visitor counter and contact information applications.</li>
+                        <li>Lambda functions and Lambda-backed custom resources.</li>
+                        <li>API Gateway API to integrate with Lambda functions.</li>
+                        <li>CloudFront distribution to serve static content from edge locations.</li>
+                    </ul>
+                    <br>
+                    <p>
+                        The one AWS back-end resource I was unable to attach to this CloudFormation template was a Lambda Layer for Pillow, the Python Image Library fork for Python 3. This layer is required for my contact information application. Fortunately, this limitation of CloudFormation was easily resolved with a GitHub Actions workflow documented later.
+                    </p>
+                    <br>
+                    <h3>AWS Back-End: IAM</h3>
+                    <br>
+                    <p>
+                        Permissions for almost all AWS resources are granted through IAM policies and roles. Roles are assumed by resources and have attached polices to dictate what they are allowed to access within AWS. The principle of least privilege should be followed to grant permissions for only the resources a role needs to use.
+                    </p>
+                    <br>
+                    <p>
+                        I did my best to follow the principle of least privilege by referencing other CloudFormation template resources when possible. The one exception is the role that allows updates to the CloudFormation stack. These updates are completed by a GitHub Actions workflow when an updated template is pushed to my back-end repository. This role requires permissions to create, update, and delete all of the resources in the stack, including the role itself. This role could be split into a separate CloudFormation template but I wanted to keep everything together for rapid deployment to other accounts, regions, domains, etc.
+                    </p>
+                    <br>
+                    <h3>AWS Back-End: S3</h3>
+                    <br>
+                    <p>
+                        There are two S3 buckets defined in the stack. One for the front-end resources and one for the back-end resources. The front-end bucket includes everything served by CloudFront. Whereas, the back-end bucket includes the CloudFormation template and the Pillow Lambda Layer.
+                    </p>
+                    <br>
+                    <h3>AWS Back-End: SSM</h3>
+                    <br>
+                    <p>
+                        I defined two SSM Parameter Store parameters in the stack. These parameters are both required input parameters when creating or updating the stack. One for the email and one for the phone number to display on successful completion of the contact information challenge.
+                    </p>
+                    <br>
+                    <h3>AWS Back-End: Route53</h3>
+                    <br>
+                    <p>
+                        On stack deploy a Route53 hosted zone is created to handle DNS for the resume website domain. Additionally, two CNAME records are created in this hosted zone so ACM can validate the certificates required for API Gateway and CloudFront. Lastly, three Alias records are created. Two Alias records point to the Cloudfront distribution for both IPv4 and IPv6 queries. One Alias record points to the API Gateway API.
+                    </p>
+                    <br>
+                    <h3>AWS Back-End: ACM</h3>
+                    <br>
+                    <p>
+                        When the stack is created, two ACM certificates are issued and validated. One certificate is issued directly by an AWS::CertificateManager::Certificate resource. This certificate is issued in the region the stack is deployed to. A CNAME record is automatically added to the Route53 hosted zone to validate domain ownership.
+                    </p>
+                    <br>
+                    <p>
+                        The second certificate was where I experienced my first hurdle in a single stack deployment. This certificate is used by CloudFront and must be created in the us-east-1 region. Unless I planned on limiting this stack to us-east-1, I needed to find a way around this. My solution involved a Lambda-backed custom resource which is described later in this document.
+                    </p>
+                    <br>
+                    <h3>AWS Back-End: DynamoDB</h3>
+                    <br>
+                    <p>
+                        The visitor counter and contact information applications each require a database to store information. Both use DynamoDB as the data stored is simple and I wanted to keep these applications serverless.
+                    </p>
+                    <br>
+                    <p>
+                        The visitor counter application’s DynamoDB table uses the SHA256 hash of a visitor’s IP address as the key and stores the number of times they have visited my resume. Additionally, there is a key with the value “Total” that stores the total number of unique IP addresses which have visited the site.
+                    </p>
+                    <br>
+                    <p>
+                        The contact information application’s DynamoDB table uses a request ID as the key and stores the expected solution and a TTL value of 5 minutes after the challenge was issued.
+                    </p>
+                    <br>
+                    <h3>AWS Back-End: Lambda Functions</h3>
+                    <br>
+                    <p>
+                        Seven total Lambda Functions were created for this resume website. The first three integrate with API Gateway to provide the application logic for my visitor counter and contact information applications. While the other four are used in Lambda-backed custom resources to help resolve some of the limitations of using a single stack for deployment.
+                    </p>
+                    <br>
+                    <p><u>resumeVisitorCountLambda.py</u> – <a href="https://github.com/mattisz/resume-backend/blob/main/lambdaFunctions/resumeVisitorCountLambda.py" target="_blank" rel="noopener noreferrer">View the code</a></p>
+                    <br>
+                    <p>
+                        This function takes the SHA256 hash of a visitors IP address and checks a DynamoDB table to see if that hash exists. If it does not exist, it creates an entry for it where it sets the number of visits to 1. Then it updates the Total number of unique visitors to reflect the new visitor in the same table. If the hashed visitor IP matches an existing key, it increments that users visit count by 1 and updates the table. Lastly, it returns the total unique visitors and the total number of visits for a given user.
+                    </p>
+                    <br>
+                    <p><u>resumeGenerateChallengeLambda.py</u> – <a href="https://github.com/mattisz/resume-backend/blob/main/lambdaFunctions/resumeGenerateChallengeLambda.py" target="_blank" rel="noopener noreferrer">View the code</a></p>
+                    <br>
+                    <p>
+                        This function was probably the most fun to create.  It generates a simple math problem, converts the problem into an image, and writes a request ID, solution, and TTL to a DynamoDB table. Lastly, it returns the Base64 encoded PNG and request ID.
+                    </p>
+                    <br>
+                    <p>
+                        The math problem uses a randomly assigned single digit on each side of the operator. The operators are limited to addition, subtraction, and multiplication so the solution is always an integer. For subtraction problems, it will flip the digits as necessary to guarantee only positive integer solutions.
+                    </p>
+                    <br>
+                    <p>
+                        Once a problem and solution set are generated, the function uses the Pillow library to create an image with 4 unique colors. The background, each digit, and the operator are all drawn in their own color. This was likely unnecessary as any bot with OCR would ignore the colors but it was fun to make and can be improved in the future by drawing random lines through the image in different colors.
+                    </p>
+                    <br>
+                    <p>
+                        The image is then converted to a Base64 string. At which point, the request ID, solution, and TTL are all written to the database. Lastly, it returns the Base64 encoded string and request ID.
+                    </p>
+                    <br>
+                    <p><u>resumeEvaluateChallengeLambda.py</u> – <a href="https://github.com/mattisz/resume-backend/blob/main/lambdaFunctions/resumeEvaluateChallengeLambda.py" target="_blank" rel="noopener noreferrer">View the code</a></p>
+                    <br>
+                    <p>
+                        This function takes the user input for the solution and the request ID as input. It looks up the request ID in the DynamoDB table to retrieve the solution. Then deletes that item as it was already used.
+                    </p>
+                    <br>
+                    <p>
+                        If the user’s solution matches the solution in the DynamoDB table, it retrieves the SSM parameters for my contact email and phone number and sets the return values to match the SSM parameters. If the user’s solution does not match the expected solution, it sets the contact email to “try” and the contact number to “again”. Finally, it returns the contact email and contact number values.
+                    </p>
+                    <br>
+                    <p><u>resumeBaseDomainNSLambda.py</u> – <a href="https://github.com/mattisz/resume-backend/blob/main/lambdaFunctions/resumeBaseDomainNSLambda.py" target="_blank" rel="noopener noreferrer">View the code</a></p>
+                    <br>
+                    <p>
+                        This function is fairly unique to my circumstance. My entire resume project exists in a single AWS account with no resources that aren’t directly related to the project. The resume is accessed via a subdomain of my base domain. In another AWS account I have a Route53 hosted zone for my base domain. This function is triggered by a custom resource to create an NS record in my base domain’s hosted zone that points to the nameservers of my resume hosted zone. This allows me to deploy the stack without having to manually create the NS record in my other AWS account’s hosted zone.
+                    </p>
+                    <br>
+                    <p>
+                        When the stack is deployed, it creates a Route53 hosted zone for my resume subdomain. Once I have the stack knows the nameservers for the hosted zone and name of the hosted zone, it can create this custom resource.
+                    </p>
+                    <br>
+                    <p>
+                        The resource requires the ARN for the IAM role in the other account that grants access to updating Route53 records in the base domain. It also requires the Route53 hosted zone ID for the base domain. Both of these inputs are entered by the user as parameters on stack create or update events.
+                    </p>
+                    <br>
+                    <p>
+                        On stack create events, this function assumes the IAM role in the other account and creates the NS records in the base domain’s Route53 hosted zone. On stack delete events, the function deletes that NS record.
+                    </p>
+                    <br>
+                    <p><u>resumeCloudfrontACMLambda.py</u> – <a href="https://github.com/mattisz/resume-backend/blob/main/lambdaFunctions/resumeCloudfrontACMLambda.py" target="_blank" rel="noopener noreferrer">View the code</a></p>
+                    <br>
+                    <p>
+                        This function exists because CloudFront only accepts certificates in the us-east-1 region. To keep this CloudFormation template portable across regions, this Lambda function creates or deletes an ACM certificate in us-east-1 and creates or deletes the required validation CNAME record in Route53.
+                    </p>
+                    <br>
+                    <p>
+                        On a stack create event, a custom resource takes the resume subdomain and Route53 hosted zone ID as inputs to run the function. First, the function requests an ACM certificate in us-east-1 for the resume subdomain. After requesting the certificate, the function calls ACM again to describe the certificate so it can extract the CNAME and value required for domain validation. Once it has the required information, it creates a record in Route53. Last, it outputs the certificate ARN, CNAME, CNAME value, and Route53 hosted zone id for use if the stack is deleted.
+                    </p>
+                    <br>
+                    <p>
+                        When the stack is deleted, this function describes the stack to get the outputs stored when the stack was created. Next, it deletes the certificate and the Route53 CNAME record that were created with the stack. The record must be deleted because a stack delete also deletes the Route53 hosted zone. This will only succeed if all records are deleted before the stack tries to delete the hosted zone.
+                    </p>
+                    <br>
+                    <p><u>resumeDeleteApiGatewayACMCnameLambda.py</u> – <a href="https://github.com/mattisz/resume-backend/blob/main/lambdaFunctions/resumeDeleteApiGatewayACMCnameLambda.py" target="_blank" rel="noopener noreferrer">View the code</a></p>
+                    <br>
+                    <p>
+                        This function deletes the Route53 ACM CNAME record for API Gateway that is created automatically when the certificate is issued. When the stack is created, an AWS::CertificateManager::Certificate resource is created that issues an ACM certificate, creates the CNAME record in Route53, and validates the certificate. However, when the stack is deleted, the ACM certificate is deleted with it but the CNAME record remains. This prevents the Route53 hosted zone from being deleted with the stack and will result in the stack delete failing.
+                    </p>
+                    <br>
+                    <p>
+                        To mitigate this failure when the stack is deleted, this function is called by a custom resource on stack delete. It takes the Route53 hosted zone ID and the certificate ARN as inputs. Next, it calls ACM to describe the certificate so it can extract the CNAME record and value. Finally, the function deletes the CNAME record from Route53. On events other than stack delete, the function simply returns a success response because no action is needed.
+                    </p>
+                    <br>
+                    <p><u>resumeValidateCertLambda.py</u> – <a href="https://github.com/mattisz/resume-backend/blob/main/lambdaFunctions/resumeValidateCertLambda.py" target="_blank" rel="noopener noreferrer">View the code</a></p>
+                    <br>
+                    <p>
+                        This final Lambda function checks to make sure the ACM certificate in us-east-1 is validated before the CloudFront distribution is created. If the CloudFormation stack tries to create the CloudFront distribution before this certificate is validated, the resource creation will fail. This is because I have the distribution set to use HTTPS. Without a validated ACM certificate in us-east-1, CloudFront is unable to encrypt the connection between its edge locations and a visitor to the resume subdomain.
+                    </p>
+                    <br>
+                    <p>
+                        When the stack is created, resumeCloudfrontACMLambda.py creates a certificate for the CloudFront in us-east-1 and creates the validation CNAME record, as described above. Next, this function takes that certificate ARN as an input and describes the certificate to see if the validation completed. If it has not, this action is repeated on a loop for 880 seconds until the validation completes or the time runs out. If the certificate is validated before the timeout, the function returns a success response. Conversely, if the function times out before the certificate is validated, the function returns a fail response.
+                    </p>
+                    <br>
+                    <p>
+                        The 880 second timeout is meant to give 20 seconds of additional headroom for the function to complete. Lambda functions are limited to 15 minutes of runtime, or 900 seconds. If the Lambda function runs for 900 seconds before it returns a fail response to CloudFormation, CloudFormation will wait for a full hour before marking the resource creation as failed.
+                    </p>
+                    <br>
+                    <p>
+                        Fortunately, because the certificate and name servers are both AWS resources, the validation has never taken the full 880 seconds in my testing. Generally, the certificate is validated in under 5 minutes when the CNAME is created in Route53. This is not guaranteed by AWS but is true in my experience.
+                    </p>
+                    <br>
+                    <h3>AWS Back-End: API Gateway</h3>
+                    <br>
+                    <p>
+                        An HTTP API is created in API Gateway along with the stack. This API integrates with the three Lambda functions required for the visitor counter and contact information applications. First the API is created, then the custom API domain is created with the ACM certificate generated earlier, next the production stage and mapping get created, followed by the Lambda integrations and their routes.
+                    </p>
+                    <br>
+                    <p>
+                        When a visitor first visits my resume, JavaScript code is run to call the /getCount endpoint. This triggers the resumeVisitorCountLambda.py function which returns the total number of unique visitors and the number of times that user has visited my resume. The JavaScript then writes the values to the bottom of the page.
+                    </p>
+                    <br>
+                    <p>
+                        If a visitor tries to use either of the contact buttons on the page, JavaScript code calls the /genProblem endpoint. This action runs the resumeGenerateChallengeLambda.py Lambda function and presents the math problem and submission form to the user. When the user inputs a response, JavaScript code calls the /evalProblem endpoint. If the challenge submission is correct, the JavaScript code writes my contact information to the page and makes the contact buttons functional. In contrast, if the challenge submission is incorrect, the JavaScript code calls the /genProblem endpoint again and prompts the user with a new problem. This process is repeated until the user submits a correct answer.
+                    </p>
+                    <br>
+                    <h3>AWS Back-End: CloudFront</h3>
+                    <br>
+                    <p>
+                        CloudFront is used as a content delivery network for my resume website, instead of hosting the site directly from an S3 bucket configured as a static website endpoint. Using CloudFront enables serving static content from edge locations across the U.S., Europe, and Israel. This reduces latency for end users to provide a better experience. Additionally, using a CloudFront distribution allows me to keep my S3 bucket private which increases security.
+                    </p>
+                    <br>
+                    <h3>GitHub: Overview</h3>
+                    <br>
+                    <p>
+                        GitHub is used for three primary purposes on this project: source control, publishing source code, and GitHub Actions for CI/CD. When code is changed and a commit is pushed to GitHub, GitHub stores both the previous code and the changes. This makes it incredibly easy to roll back any changes that were unintended or buggy. Additionally, GitHub is an excellent platform to publish code for others to see how things work or use the code for their own projects. All of the code for this project is posted publicly to GitHub. Lastly, GitHub has a feature I used for CI/CD called GitHub Actions. When code or images are pushed to GitHub, GitHub Actions workflows examine the changes and update AWS resources to reflect those changes.
+                    </p>
+                    <br>
+                    <p>
+                        The GitHub structure for this project is:
+                    </p>
+                    <br>
+                    <ul>
+                        <li>One front-end public repository for all front-end resources.</li>
+                        <li>One front-end GitHub Actions workflow to push front-end resources changes directly to S3.</li>
+                        <li>One back-end public repository for all back-end resources.</li>
+                        <li>One back-end GitHub Actions workflow to update the CloudFormation stack when the template is changed.</li>
+                        <li>One back-end GitHub Actions workflow to update the Pillow Lambda layer if the layer zip file is changed.</li>
+                        <li>Several GitHub Actions secrets for each repository to keep sensitive data private while still publishing the project source code.</li>
+                    </ul>
+                    <br>
+                    <h3>GitHub: Front-End</h3>
+                    <br>
+                    <p>
+                        The front-end repository stores the HTML, CSS, JavaScript, images, icons, and a single GitHub Actions workflow. These files are everything required for the front-end of my resume website. Everything other than the GitHub actions workflow file is also stored in an S3 bucket to provide the website a visitor sees.
+                    </p>
+                    <br>
+                    <p><u>main.yml</u> – <a href="https://github.com/mattisz/resume-frontend/blob/main/.github/workflows/main.yml" target="_blank" rel="noopener noreferrer">View the code</a></p>
+                    <br>
+                    <p>
+                        This GitHub Actions workflow file automatically pushes the contents of this repository, less the workflow file itself, to the front-end S3 bucket. Once the files are pushed to S3, the workflow invalidates the CloudFront cache so that changes can be seen immediately on my resume site. This workflow is triggered by any changes pushed to the repository or by a workflow dispatch event.
+                    </p>
+                    <br>
+                    <p>
+                        When changes are pushed to the repository, the workflow file first checks to see what was changed. Next, it authenticates with AWS by assuming an IAM role defined in my CloudFormation stack. Then, it syncs the files to the front-end S3 bucket. Lastly, the workflow invalidates all changed files in the CloudFront cache.
+                    </p>
+                    <br>
+                    <p>
+                        The workflow can also be triggered by a workflow dispatch event and achieves the same goal. To do so requires four inputs: the AWS region that the S3 bucket is in, the ARN of the IAM role to assume, the S3 bucket to update, and the CloudFront distribution ID for cache invalidation. When the workflow is triggered by resource changes in the repository these values are retrieved as stored secrets. However, the workflow dispatch event is designed to be triggered by another workflow in my backend repository. If the CloudFormation stack changes, these values may also change. I created this workflow dispatch event to make sure the correct front-end resources get updated in that case.
+                    </p>
+                    <br>
+                    <h3>GitHub: Back-End</h3>
+                    <br>
+                    <p>
+                        The back-end GitHub repository stores all the back-end code for this project. This includes the CloudFormation template, a Python script to convert Python code into JSON so it can be included in the CloudFormation template, the Pillow Lambda layer zip file, all of my Lambda functions as Python files, and two GitHub Actions workflow files.
+                    </p>
+                    <br>
+                    <p><u>cloudformation.yaml</u> – <a href="https://github.com/mattisz/resume-backend/blob/main/.github/workflows/cloudformation.yaml" target="_blank" rel="noopener noreferrer">View the code</a></p>
+                    <br>
+                    <p>
+                        This GitHub Actions workflow deploys any changes to the CloudFormation stack. When an update to the CloudFormation template is pushed to the repository, the workflow is triggered. The worker authenticates with AWS, pushes the new template to the back-end S3 bucket, updates the stack, and triggers a front-end workflow to push the front-end repository to AWS. All information specific to my AWS account is stored as encrypted secrets and used in the workflow when necessary. The workflow can also be triggered manually which might be necessary if I change the region the stack is deployed to or any other dynamic elements I have stored in secrets.
+                    </p>
+                    <br>
+                    <p><u>pillow.yaml</u> – <a href="https://github.com/mattisz/resume-backend/blob/main/.github/workflows/pillow.yaml" target="_blank" rel="noopener noreferrer">View the code</a></p>
+                    <br>
+                    <p>
+                        This workflow updates Pillow Lambda layer in AWS. Like the cloudformation.yaml workflow, this workflow is either triggered by a resource push to the repository or manually. In either circumstance the worker uploads the pillow zip file to the back-end S3 bucket. Next, it publishes the layer to Lambda. Finally, the layer is attached to the resumeGenerateChallengeLambda function so it can be used to generate the math problem image.
+                    </p>
+                    <br>
+                    <h3>GitHub: Secrets</h3>
+                    <br>
+                    <p>
+                        GitHub secrets are used in both repositories to protect private information and to allow resource changes without updating workflow files. Protecting information is incredibly important, especially for public repositories. Anyone can take a look at the workflow files and logs in public repositories so all API keys and private resource identifiers need to be stored as secrets to prevent security breaches. In addition to real secrets, this project also uses secrets for anything subject to change like the AWS region. If the region was hardcoded in every workflow file, it would be quite inconvenient to deploy the resume to another region. By storing the region as a secret, I am able to quickly deploy the entire site to a new AWS region by changing the region secret in the repository.
+                    </p>
+                    <br>
+                    <h3>Conclusion</h3>
+                    <br>
+                    <p>
+                        This project has taught me an incredible amount about working with AWS. As I noted in the forward, my goal was to cement and expand upon the information I learned while studying for my AWS Solutions Architect – Associate exam. I believe this project has done just that. This project certainly has its imperfections but I really enjoyed tackling the challenges I met along the way. Furthermore, coming from a more traditional environment, getting hands on with serverless architecture was incredibly exciting. I am looking forward to delving deeper into AWS and other cloud platforms so I can continue developing my skills.
+                    </p>
+                    <br>
+                    <p>
+                        If you made it this far, thank you for taking the time to learn about this project. If you are an employer interested in hiring me, please feel free to reach out by using the contact buttons in the information bar at the top or side of the page.
+                    </p>
+                    <br>
+                    <p>
+                        Best,
+                    </p>
+                    <br>
+                    <p>
+                        Matthew Tiszenkel
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body> 
+</html>
